@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    
-    <link rel="stylesheet" href="./css/index.css">
-    
-    <title>QUICK CREDIT</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>quick Credits</title>
 </head>
+<body>
+<body>
+    <div class="mobnav">
+        <span class="mob-menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+        <div class="mob-logo">
+        <img class="main-logo" src="../images/logo.PNG">
+      </div>
+      </div>
+          
+      
+          <nav class="navbar">
+            <ul class="topnav">
+              <li class="k"><a class="menulink" href="../#">Login</a>
+                <li class="k"><a class="menulink" href="../pages/loan.html">Download Application</a>
+                <li><a class="menulink" href="../#">Request a Loan</a></li>
+                <li><a class="menulink " href="../pages/signin.html">View Repayment History</a></li>
+                <li><a class="menulink " href="../index.html">Home</a></li>
+                <img class="main-logo" src="../images/logo.PNG">
+              </ul>
+              
+          
+</nav>
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-<body >
-        <div class="topnav" id="myTopnav">
-                <a href="index.html" class="active">Home</a>
-                <a href="#"></a>
-                
-                <a href="#" class="icon" onclick="myFunction()">
-                    &#9776;
-                </a>
-                <div class="logins">         
-                 <a href="admin.html">Admin Login</a>
-              </div>
-            </div>
-             
-      <div class="row">   
-    <div class="page-container">
-                    <form class="container" action="session-request.html">
-                        <h3>LogIn</h3>
-                        <label for="email"> Email <sup>*</sup> </label>
-                        <input class="formInput" type="email" placeholder="email" required>
-
-                        <label for="password"> Password <sup>*</sup> </label>
-                        <input class="formInput" type="password" placeholder="password" required>
-                        <br>
-                        <button class="auth-button" type="submit">LogIn</button>
-
-                        <p>Have no account? <a href="signup.html">SignUp</a></p>
-                       
-                    </form>
-            </div>
+        <a href="../index.html">Home</a>
+        <hr class="menu-separtor">
+        <a href="../pages/signin.html">View Repayment History</a>
+        <hr class="menu-separtor">
+        <a  href="../pages/view_mentors.html">Download Application</a>
+        <hr class="menu-separtor">
+        <a href="../pages/signup.html">Join</a>
+        <hr class="menu-separtor">
+        <a href="../pages/signin.html">Login</a>
+        <hr class="menu-separtor">
+      </div>
+  
+      
+          
+<!-- ############################### -->
+<div class="centered-form" onsubmit="navto()">
+    <div class="card-holder">
+        <form >
+          <h2>Login</h2>
+          <input type="text" placeholder="Username or Email" id="email" class="form-input txtb">
+          <input type="password" placeholder="Password" class="form-input txtb"id="pswd" >
+          <input type="button" value="Signin" class="btn form-input btn-js" onclick="signin()">
+          <div class="form-checkbox">
+          <input class="form-checkbox" type="checkbox" /><label class="checkbox-label">Keep me signed in</label> 
         </div>
+          <a class="link" href="../pages/signup.html">Don't have account ?</a>
+        </form>
     </div>
-</div>
-<script src="./js/index.js" >
-            
-    </script>
+      </div>
+<!-- ################################ -->
+<!-- Dialog Box -->
+<div id="dialogbox" class="modal">
+
+        <!-- Dialog content -->
+        <div class="modal-content">
+                <div class="modal-header">
+                        <span class="close" onclick="closeDialog()">&times;</span>
+                        <h2>Modal Header</h2>
+                      </div>
+                      <div class="modal-body">
+          <span class="dialog-content dialog-content-js"></span>
+        </div>
+        </div>
+      
+      </div>
+ <script type="text/javascript" src="../js/scripts.js"></script>
+
 </body>
+<div class="footer">
+    <p id="pd">&copy;2019 All Right reserved</p>
+</div>
 
 </html>
