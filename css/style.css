@@ -194,11 +194,12 @@ width: 100%;
     width: 500px;
     padding: 20px;
     text-align: center;
-    background: url(../img/support.jpg);
+    background-color: url(../images/.jpg);
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 70px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     border-radius: 5px;
+    
   }
   .center-text{
     text-align: center;
@@ -239,6 +240,7 @@ width: 100%;
   }
   .bordered{
     border: 1px solid #09ad01;
+    border-radius: 20px;
   }
 
   .txtb{
@@ -1189,10 +1191,5 @@ text-align: center;
  .modal {width:100%;}
  .modal-buttons{ margin: 0px;}
 }
-.card-holder{
-  width:100%;
-  border: 1px solid #888;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.301),0 6px 20px 0 rgba(0,0,0,0.301);
-}
+
   
